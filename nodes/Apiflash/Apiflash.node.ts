@@ -1,11 +1,11 @@
-import {NodeConnectionTypes, type INodeType, type INodeTypeDescription} from 'n8n-workflow';
-import {screenshotDescription} from './resources/screenshot';
+import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+import { screenshotDescription } from './resources/screenshot';
 
 export class Apiflash implements INodeType {
     description: INodeTypeDescription = {
         displayName: 'ApiFlash Screenshots',
         name: 'apiflash',
-        icon: 'file:apiflash.svg',
+        icon: { light: 'file:apiflash.svg', dark: 'file:apiflash.dark.svg' },
         group: ['transform'],
         version: 1,
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -16,7 +16,7 @@ export class Apiflash implements INodeType {
         usableAsTool: true,
         inputs: [NodeConnectionTypes.Main],
         outputs: [NodeConnectionTypes.Main],
-        credentials: [{name: 'apiflashApi', required: true}],
+        credentials: [{ name: 'apiflashApi', required: true }],
         requestDefaults: {
             baseURL: 'https://api.apiflash.com/v1',
             headers: {

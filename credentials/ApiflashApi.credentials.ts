@@ -11,7 +11,10 @@ export class ApiflashApi implements ICredentialType {
 
     displayName = 'ApiFlash API';
 
-    icon: Icon = 'file:../nodes/Apiflash/apiflash.svg';
+    icon: Icon = {
+        light: 'file:../nodes/Apiflash/apiflash.svg',
+        dark: 'file:../nodes/Apiflash/apiflash.dark.svg',
+    };
 
     documentationUrl = 'https://github.com/ApiFlash/n8n-nodes-apiflash?tab=readme-ov-file#credentials';
 
@@ -20,7 +23,7 @@ export class ApiflashApi implements ICredentialType {
             displayName: 'Access Key',
             name: 'accessKey',
             type: 'string',
-            typeOptions: {password: true},
+            typeOptions: { password: true },
             required: true,
             default: '',
             description:
