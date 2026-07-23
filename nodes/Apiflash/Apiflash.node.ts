@@ -3,7 +3,7 @@ import {screenshotDescription} from './resources/screenshot';
 
 export class Apiflash implements INodeType {
     description: INodeTypeDescription = {
-        displayName: 'ApiFlash',
+        displayName: 'ApiFlash Screenshots',
         name: 'apiflash',
         icon: 'file:apiflash.svg',
         group: ['transform'],
@@ -11,7 +11,7 @@ export class Apiflash implements INodeType {
         subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
         description: 'Capture website screenshots with the ApiFlash API',
         defaults: {
-            name: 'ApiFlash',
+            name: 'ApiFlash Screenshots',
         },
         usableAsTool: true,
         inputs: [NodeConnectionTypes.Main],

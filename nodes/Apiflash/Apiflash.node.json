@@ -6,6 +6,16 @@
 		"Development",
 		"Developer Tools"
 	],
+	"alias": [
+		"screenshot",
+		"screenshots",
+		"capture",
+		"screen capture",
+		"website",
+		"webpage",
+		"image",
+		"thumbnail"
+	],
 	"resources": {
 		"credentialDocumentation": [
 			{
