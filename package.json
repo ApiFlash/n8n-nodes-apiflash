@@ -16,7 +16,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ApiFlash/n8n-nodes-apiflash.git"
+    "url": "git+https://github.com/ApiFlash/n8n-nodes-apiflash.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "n8n-node build",
