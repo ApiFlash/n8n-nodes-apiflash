@@ -1,10 +1,10 @@
 {
-	"node": "n8n-nodes-apiflash",
+	"node": "n8n-nodes-apiflash.apiflash",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
 		"Development",
-		"Developer Tools"
+		"Utility"
 	],
 	"alias": [
 		"screenshot",
