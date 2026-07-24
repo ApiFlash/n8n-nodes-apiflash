@@ -148,6 +148,7 @@ export const screenshotCaptureDescription: INodeProperties[] = [
                 default: false,
                 description:
                     'Whether to extract the HTML of the page at the same time the screenshot is made. An extracted_html attribute is added to the returned JSON document.',
+                displayOptions: { show: { '/output': ['json'] } },
                 routing: { send: { type: 'query', property: 'extract_html' } },
             },
             {
@@ -157,6 +158,7 @@ export const screenshotCaptureDescription: INodeProperties[] = [
                 default: false,
                 description:
                     'Whether to extract the text of the page at the same time the screenshot is made. An extracted_text attribute is added to the returned JSON document.',
+                displayOptions: { show: { '/output': ['json'] } },
                 routing: { send: { type: 'query', property: 'extract_text' } },
             },
             {
@@ -255,11 +257,19 @@ export const screenshotCaptureDescription: INodeProperties[] = [
             {
                 displayName: 'Scale Factor',
                 name: 'scaleFactor',
-                type: 'number',
-                typeOptions: { minValue: 1, maxValue: 2 },
+                type: 'options',
+                options: [
+                    {
+                        name: '1 (Standard Resolution)',
+                        value: 1,
+                    },
+                    {
+                        name: '2 (High Definition, for Retina Displays)',
+                        value: 2,
+                    },
+                ],
                 default: 1,
-                description:
-                    'The device scale factor to use: 1 (standard resolution) or 2 (high definition for retina displays)',
+                description: 'The device scale factor to use',
                 routing: { send: { type: 'query', property: 'scale_factor' } },
             },
             {

@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- **Extract HTML** and **Extract Text** options are now hidden when the
+  **Output** is set to Image File, since extracted data is only returned with
+  the JSON output.
+- **Scale Factor** is now a dropdown with the two supported values (1 and 2)
+  instead of a free-form number field.
+
 ## [0.2.0] - 2026-07-23
 
 ### Added
