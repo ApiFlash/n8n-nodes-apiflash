@@ -6,7 +6,7 @@ This is an n8n community node for [ApiFlash](https://apiflash.com), a screenshot
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation. The package name is `n8n-nodes-apiflash`.
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation. The package name is `@apiflash/n8n-nodes-apiflash`.
 
 ## Operations
 

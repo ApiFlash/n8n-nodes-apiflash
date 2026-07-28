@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-apiflash.apiflash",
+	"node": "@apiflash/n8n-nodes-apiflash.apiflash",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [

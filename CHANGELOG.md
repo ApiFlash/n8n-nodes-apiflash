@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-07-28
+
+### Changed
+
+- The package is now published under the official ApiFlash npm scope as
+  `@apiflash/n8n-nodes-apiflash`. Users of `n8n-nodes-apiflash` should
+  uninstall it and install the scoped package instead.
+- `node` identifier updated to `@apiflash/n8n-nodes-apiflash.apiflash` to match
+  the new package name.
+- Package author is now ApiFlash (`contact@apiflash.com`).
+
 ## [0.2.2] - 2026-07-24
 
 ### Fixed

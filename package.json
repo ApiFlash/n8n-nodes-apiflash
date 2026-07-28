@@ -1,6 +1,6 @@
 {
-  "name": "n8n-nodes-apiflash",
-  "version": "0.2.2",
+  "name": "@apiflash/n8n-nodes-apiflash",
+  "version": "0.3.0",
   "description": "n8n community node for ApiFlash, a website screenshot API",
   "license": "MIT",
   "homepage": "https://apiflash.com",
@@ -11,8 +11,8 @@
     "screenshot-api"
   ],
   "author": {
-    "name": "Timothée Jeannin",
-    "email": "tjeannin@netcube.fr"
+    "name": "ApiFlash",
+    "email": "contact@apiflash.com"
   },
   "repository": {
     "type": "git",
