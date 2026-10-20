@@ -205,10 +205,10 @@ export const screenshotCaptureDescription: INodeProperties[] = [
                 displayName: 'Height',
                 name: 'height',
                 type: 'number',
-                typeOptions: { minValue: 0, maxValue: 4320 },
+                typeOptions: { minValue: 0, maxValue: 16350 },
                 default: 1080,
                 description:
-                    'The height, in pixels, of the viewport to use. This is ignored if Full Page is enabled.',
+                    'The height, in pixels, of the viewport to use, up to 16350. Width × height cannot exceed 7680 × 4320 pixels. This is ignored if Full Page is enabled.',
                 routing: { send: { type: 'query', property: 'height' } },
             },
             {
@@ -371,9 +371,10 @@ export const screenshotCaptureDescription: INodeProperties[] = [
                 displayName: 'Width',
                 name: 'width',
                 type: 'number',
-                typeOptions: { minValue: 0, maxValue: 7680 },
+                typeOptions: { minValue: 0, maxValue: 16350 },
                 default: 1920,
-                description: 'The width, in pixels, of the viewport to use',
+                description:
+                    'The width, in pixels, of the viewport to use, up to 16350. Width × height cannot exceed 7680 × 4320 pixels.',
                 routing: { send: { type: 'query', property: 'width' } },
             },
         ],
